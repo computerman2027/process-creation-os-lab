@@ -7,11 +7,10 @@ int main()
     int p;
     printf("hllo 1\n");
     p = fork();
-    if (p == 0)
-    {
+    printf("p = %d \n",p);
         printf("Child id : %d\n", getpid());
-        printf("Parent id : %d", getppid());
-    }
+        printf("Parent id : %d\n", getppid());
+
 
     return 0;
 }
